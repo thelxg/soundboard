@@ -1,6 +1,6 @@
 body {
     background: url("../images/bg.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     color: #fff;
 }
 
@@ -123,8 +123,12 @@ button:focus {
     outline: none;
 }
 
-button h1 {
+button h1, button h6 {
     color: #c6c9Cd;
+}
+
+.buttontext {
+    display: none;
 }
 
 .greenButton:hover {
@@ -195,5 +199,66 @@ button h1 {
     button {
         height: 140px;
         width: 140px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+    .container {
+        padding: 0;
+    }
+    #soundboardImg {
+        width: 130px;
+        height: 25px;
+    }
+    #launchpadImg {
+        width: 122px;
+        height: 25px;
+    }
+    #title {
+        height: 5%;
+        width: 100%;
+        margin: 5px 0 0 0;
+        padding: 0 15px;
+    }
+    #bankButtons {
+        height: 10%;
+        padding: 0 0 0 25px;
+        justify-content: space-around;
+    }
+    #teamsBoard {
+        margin-top: 10px;
+        height: 80%;
+    }
+    .buttonBank {
+        height: 85%
+    }
+    .soundboardButton {
+        width: 50%;
+        height: 20%;
+    }
+    button {
+        height: 100px;
+        width: 100px;
+        text-align: center;
+    }
+    #cdbutton {
+        transform: translateY(15px);
+    }
+    .tape {
+        display: none;
+    }
+    #generalBoard .soundboardButton, #fartBoard .soundboardButton {
+        width: 33%;
+        position: relative;
+    }
+    .buttontext {
+        display: flex;
+    }
+    #generalBoard, #fartBoard {
+        margin-top: 10px;
     }
 }
