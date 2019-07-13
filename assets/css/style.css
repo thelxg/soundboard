@@ -1,0 +1,193 @@
+body {
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    padding: 10px 0;
+}
+
+#title {
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+    padding: 5px 0 0 19px;
+}
+
+#soundboardImg {
+    width: 230px;
+    height: 40px;
+    opacity: 0.85;
+}
+
+#launchpadImg {
+    width: 226px;
+    height: 40px;
+    opacity: 0.85;
+}
+
+#bankButtons {
+    height: 10%;
+    display: flex;
+    align-content: center;
+    padding-left: 30px;
+}
+
+.smallButton {
+    margin-right: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #c8d6e8;
+}
+
+.smallButton:hover {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.innerbuttonimg {
+    transform: translate(-7px, -2px);
+    height: 56px;
+    width: 55px;
+    opacity: 0.9;
+}
+
+.buttonBank {
+    display: flex;
+    justify-content: space-around;
+}
+
+#teamsBoard {
+    height: 75%;
+    margin-top: 3%;
+    /* align-content: space-around; */
+}
+
+#generalBoard, #fartBoard {
+    display: none;
+    height: 80%;
+    align-content: space-around;
+}
+
+.soundboardButton {
+    width: 20%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tape {
+    height: 40px;
+    width: 175px;
+    font-family: 'Permanent Marker', cursive;
+    color: #262626;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.tape1 {
+    background: url(../images/tape.png);
+    background-size: 100% 100%;
+}
+
+.tape2 {
+    background: url(../images/tape2.png);
+    background-size: 100% 100%;
+}
+
+.tape3 {
+    background: url(../images/tape3.png);
+    background-size: 100% 100%;
+}
+
+.tape4 {
+    background: url(../images/tape4.png);
+    background-size: 100% 100%;
+}
+
+button {
+    background: url("../images/buttonbg.jpg");
+    border: 3px inset rgba(70, 69, 77, 0.9);
+    height: 145px;
+    width: 145px;
+    border-radius: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button h1 {
+    color: #c6c9Cd;
+}
+
+.greenButton:hover {
+    background: url("../images/greenbuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(43, 245, 37, 0.6);
+}
+
+.blueButton:hover {
+    background: url("../images/bluebuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(50, 119, 230, 0.6);
+}
+
+.whiteButton:hover {
+    background: url("../images/whitebuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
+}
+
+.redButton:hover {
+    background: url("../images/redbuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(240, 56, 54, 0.6);
+}
+
+.yellowButton:hover {
+    background: url("../images/yellowbuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(247, 237, 123, 0.6);
+}
+
+#cumDumpsters {
+    overflow: hidden;
+}
+
+#cdbutton {
+    transform: translateY(25px);
+}
+
+.buttonImg {
+    height: 75%;
+    width: 75%;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 40px 0 20px 0;
+    }
+    #title {
+        height: 5%;
+    }
+    #teamsBoard {
+        margin-top: 0;
+    }
+    #bankButtons {
+        height: 10%;
+    }
+    .buttonBank {
+        height: 75%
+    }
+    .soundboardButton {
+        width: 25%;
+        height: auto;
+    }
+    button {
+        height: 140px;
+        width: 140px;
+    }
+}
