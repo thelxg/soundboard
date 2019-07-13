@@ -142,6 +142,12 @@ button h1 {
     box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
 }
 
+.purpleButton:hover {
+    background: url("../images/purplebuttonbg.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0 35px rgba(175, 137, 255, 0.6);
+}
+
 .redButton:hover {
     background: url("../images/redbuttonbg.jpg");
     box-shadow: 0 0 35px rgba(240, 56, 54, 0.6);
