@@ -44,7 +44,7 @@ body {
     background: #c8d6e8;
 }
 
-.smallButton:hover {
+.smallButton:active {
     background: #fff;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
@@ -131,33 +131,33 @@ button h1, button h6 {
     display: none;
 }
 
-.greenButton:hover {
+.greenButton:active {
     background: url("../images/greenbuttonbg.jpg");
     box-shadow: 0 0 35px rgba(43, 245, 37, 0.6);
 }
 
-.blueButton:hover {
+.blueButton:active {
     background: url("../images/bluebuttonbg.jpg");
     box-shadow: 0 0 35px rgba(50, 119, 230, 0.6);
 }
 
-.whiteButton:hover {
+.whiteButton:active {
     background: url("../images/whitebuttonbg.jpg");
     box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
 }
 
-.purpleButton:hover {
+.purpleButton:active {
     background: url("../images/purplebuttonbg.jpg");
     background-size: 100% 100%;
     box-shadow: 0 0 35px rgba(175, 137, 255, 0.6);
 }
 
-.redButton:hover {
+.redButton:active {
     background: url("../images/redbuttonbg.jpg");
     box-shadow: 0 0 35px rgba(240, 56, 54, 0.6);
 }
 
-.yellowButton:hover {
+.yellowButton:active {
     background: url("../images/yellowbuttonbg.jpg");
     box-shadow: 0 0 35px rgba(247, 237, 123, 0.6);
 }
