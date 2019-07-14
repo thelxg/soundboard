@@ -45,6 +45,7 @@ $(document).ready(function () {
     const deedIt = new Audio('assets/audio/general/deedit.mp3');
     const beer = new Audio('assets/audio/general/getmebeer.mp3');
     const braaam = new Audio('assets/audio/general/braaam.mp3');
+    const gavel = new Audio('assets/audio/general/gavel.mp3');
 
 
     $('#2-1').click(() => {
@@ -68,8 +69,8 @@ $(document).ready(function () {
         }, 2950);
     });
     $('#2-4').click(() => {
-        FILENAME.currentTime = 0;
-        FILENAME.play();
+        gavel.currentTime = 0;
+        gavel.play();
     });
     $('#2-5').click(() => {
         FILENAME.currentTime = 0;
