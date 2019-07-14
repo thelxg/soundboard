@@ -136,7 +136,17 @@ button h1, button h6 {
     box-shadow: 0 0 35px rgba(43, 245, 37, 0.6);
 }
 
+.greenButtonPlaying {
+    background: url("../images/greenbuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(43, 245, 37, 0.6);
+}
+
 .blueButton:active {
+    background: url("../images/bluebuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(50, 119, 230, 0.6);
+}
+
+.blueButtonPlaying {
     background: url("../images/bluebuttonbg.jpg");
     box-shadow: 0 0 35px rgba(50, 119, 230, 0.6);
 }
@@ -157,18 +167,43 @@ button h1, button h6 {
     box-shadow: 0 0 35px rgba(247, 237, 123, 0.6);
 }
 
-#cumDumpsters {
-    overflow: hidden;
+.purpleButtonPlaying {
+    background: url("../images/purplebuttonbg.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0 35px rgba(175, 137, 255, 0.6);
 }
 
-#cdbutton {
-    transform: translateY(25px);
+.redButtonPlaying {
+    background: url("../images/redbuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(240, 56, 54, 0.6);
+}
+
+.yellowButtonPlaying {
+    background: url("../images/yellowbuttonbg.jpg");
+    box-shadow: 0 0 35px rgba(247, 237, 123, 0.6);
 }
 
 .buttonImg {
     height: 75%;
     width: 75%;
     opacity: 0.8;
+    transition: 0.1s;
+}
+
+button:active .buttonImg {
+    opacity: 0.4;
+}
+
+.smallButton:active {
+    transform: scale(0.99,0.98);
+}
+
+button:active {
+    transform: scale(0.99,0.99);
+}
+
+.smallerfont h6 {
+    font-size: .9rem;
 }
 
 @media only screen and (max-width: 768px) {
