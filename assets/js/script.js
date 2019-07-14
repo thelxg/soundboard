@@ -44,6 +44,7 @@ $(document).ready(function () {
     const tmwn = new Audio('assets/audio/general/tellmewhonext.mp3');
     const deedIt = new Audio('assets/audio/general/deedit.mp3');
     const beer = new Audio('assets/audio/general/getmebeer.mp3');
+    const braaam = new Audio('assets/audio/general/braaam.mp3');
 
 
     $('#2-1').click(() => {
@@ -59,8 +60,12 @@ $(document).ready(function () {
         applause.play();
     });
     $('#2-3').click(() => {
-        FILENAME.currentTime = 0;
-        FILENAME.play();
+        braaam.currentTime = 0;
+        braaam.play();
+        $('#2-3').addClass('greenButtonPlaying');
+        setTimeout(function () {
+            $('#2-3').removeClass('greenButtonPlaying');
+        }, 2950);
     });
     $('#2-4').click(() => {
         FILENAME.currentTime = 0;
