@@ -44,7 +44,7 @@ body {
     background: #c8d6e8;
 }
 
-.smallButton:active {
+.smallButtonActive {
     background: #fff;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
@@ -139,11 +139,6 @@ button h1, button h6 {
 .blueButton:active {
     background: url("../images/bluebuttonbg.jpg");
     box-shadow: 0 0 35px rgba(50, 119, 230, 0.6);
-}
-
-.whiteButton:active {
-    background: url("../images/whitebuttonbg.jpg");
-    box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
 }
 
 .purpleButton:active {
