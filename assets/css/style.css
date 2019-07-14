@@ -195,11 +195,11 @@ button:active .buttonImg {
 }
 
 .smallButton:active {
-    transform: scale(0.99,0.98);
+    transform: scale(0.96, 0.96);
 }
 
 button:active {
-    transform: scale(0.99,0.99);
+    transform: scale(0.99, 0.99);
 }
 
 .smallerfont h6 {

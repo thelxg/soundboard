@@ -31,6 +31,84 @@ $(document).ready(function () {
 
     // team soundbank code
 
+    const rb1 = new Audio('assets/audio/general/deedit.mp3');
+    const rb2 = new Audio('assets/audio/general/clap.wav');
+    const rb3 = new Audio('assets/audio/general/airhorn.mp3');
+    const hg1 = new Audio('assets/audio/general/deedit.mp3');
+    const hg2 = new Audio('assets/audio/general/clap.wav');
+    const hg3 = new Audio('assets/audio/general/airhorn.mp3');
+    const necro1 = new Audio('assets/audio/general/deedit.mp3');
+    const necro2 = new Audio('assets/audio/general/clap.wav');
+    const necro3 = new Audio('assets/audio/general/airhorn.mp3');
+    const jc1 = new Audio('assets/audio/general/deedit.mp3');
+    const jc2 = new Audio('assets/audio/general/clap.wav');
+    const jc3 = new Audio('assets/audio/general/airhorn.mp3');
+    const cd1 = new Audio('assets/audio/general/deedit.mp3');
+    const cd2 = new Audio('assets/audio/general/clap.wav');
+    const cd3 = new Audio('assets/audio/general/airhorn.mp3');
+    const hp1 = new Audio('assets/audio/general/deedit.mp3');
+    const hp2 = new Audio('assets/audio/general/clap.wav');
+    const hp3 = new Audio('assets/audio/general/airhorn.mp3');
+    const bukkake1 = new Audio('assets/audio/general/deedit.mp3');
+    const bukkake2 = new Audio('assets/audio/general/clap.wav');
+    const bukkake3 = new Audio('assets/audio/general/airhorn.mp3');
+    const dv1 = new Audio('assets/audio/general/deedit.mp3');
+    const dv2 = new Audio('assets/audio/general/clap.wav');
+    const dv3 = new Audio('assets/audio/general/airhorn.mp3');
+    const bj1 = new Audio('assets/audio/general/deedit.mp3');
+    const bj2 = new Audio('assets/audio/general/clap.wav');
+    const bj3 = new Audio('assets/audio/general/airhorn.mp3');
+    const cocken1 = new Audio('assets/audio/general/deedit.mp3');
+    const cocken2 = new Audio('assets/audio/general/clap.wav');
+    const cocken3 = new Audio('assets/audio/general/airhorn.mp3');
+    const rbArr = [rb1, rb2, rb3];
+    const hgArr = [hg1, hg2, hg3];
+    const necroArr = [necro1, necro2, necro3];
+    const jcArr = [jc1, jc2, jc3];
+    const cdArr = [cd1, cd2, cd3];
+    const hpArr = [hp1, hp2, hp3];
+    const bukkakeArr = [bukkake1, bukkake2, bukkake3];
+    const dvArr = [dv1, dv2, dv3];
+    const bjArr = [bj1, bj2, bj3];
+    const cockenArr = [cocken1, cocken2, cocken3];
+
+    randomSound = (arr) => {
+        let randomIndex = Math.floor(Math.random() * 3);
+        arr[randomIndex].currentTime = 0;
+        arr[randomIndex].play();
+    };
+
+    $('#rapebabies').click(() => {
+        randomSound(rbArr)
+    });
+    $('#handGrenades').click(() => {
+        randomSound(hgArr)
+    });
+    $('#necros').click(() => {
+        randomSound(necroArr)
+    });
+    $('#jazzCabbage').click(() => {
+        randomSound(jcArr)
+    });
+    $('#cumDumpsters').click(() => {
+        randomSound(cdArr)
+    });
+    $('#hotPockets').click(() => {
+        randomSound(hpArr)
+    });
+    $('#bukkake').click(() => {
+        randomSound(bukkakeArr)
+    });
+    $('#domesticViolence').click(() => {
+        randomSound(dvArr)
+    });
+    $('#buffaloJockeys').click(() => {
+        randomSound(bjArr)
+    });
+    $('#cockenblockers').click(() => {
+        randomSound(cockenArr)
+    });
+
     // general soundbank code
     const airhorn = new Audio('assets/audio/general/airhorn.mp3');
     const applause = new Audio('assets/audio/general/applause.mp3');
@@ -159,62 +237,122 @@ $(document).ready(function () {
     $('#3-1').click(() => {
         fart1.currentTime = 0;
         fart1.play();
+        $('#3-1').addClass('blueButtonPlaying');
+        setTimeout(function () {
+            $('#3-1').removeClass('blueButtonPlaying');
+        }, 510);
     });
     $('#3-2').click(() => {
         fart2.currentTime = 0;
         fart2.play();
+        $('#3-2').addClass('purpleButtonPlaying');
+        setTimeout(function () {
+            $('#3-2').removeClass('purpleButtonPlaying');
+        }, 3230);
     });
     $('#3-3').click(() => {
         fart3.currentTime = 0;
         fart3.play();
+        $('#3-3').addClass('greenButtonPlaying');
+        setTimeout(function () {
+            $('#3-3').removeClass('greenButtonPlaying');
+        }, 900);
     });
     $('#3-4').click(() => {
         fart4.currentTime = 0;
         fart4.play();
+        $('#3-4').addClass('yellowButtonPlaying');
+        setTimeout(function () {
+            $('#3-4').removeClass('yellowButtonPlaying');
+        }, 1550);
     });
     $('#3-5').click(() => {
         fart5.currentTime = 0;
         fart5.play();
+        $('#3-5').addClass('redButtonPlaying');
+        setTimeout(function () {
+            $('#3-5').removeClass('redButtonPlaying');
+        }, 400);
     });
     $('#3-6').click(() => {
         fart6.currentTime = 0;
         fart6.play();
+        $('#3-6').addClass('blueButtonPlaying');
+        setTimeout(function () {
+            $('#3-6').removeClass('blueButtonPlaying');
+        }, 1280);
     });
     $('#3-7').click(() => {
         fart7.currentTime = 0;
         fart7.play();
+        $('#3-7').addClass('purpleButtonPlaying');
+        setTimeout(function () {
+            $('#3-7').removeClass('purpleButtonPlaying');
+        }, 1750);
     });
     $('#3-8').click(() => {
         fart8.currentTime = 0;
         fart8.play();
+        $('#3-8').addClass('greenButtonPlaying');
+        setTimeout(function () {
+            $('#3-8').removeClass('greenButtonPlaying');
+        }, 1558);
     });
     $('#3-9').click(() => {
         fart9.currentTime = 0;
         fart9.play();
+        $('#3-9').addClass('yellowButtonPlaying');
+        setTimeout(function () {
+            $('#3-9').removeClass('yellowButtonPlaying');
+        }, 1320);
     });
     $('#3-10').click(() => {
         fart10.currentTime = 0;
         fart10.play();
+        $('#3-10').addClass('redButtonPlaying');
+        setTimeout(function () {
+            $('#3-10').removeClass('redButtonPlaying');
+        }, 400);
     });
     $('#3-11').click(() => {
         fart11.currentTime = 0;
         fart11.play();
+        $('#3-11').addClass('blueButtonPlaying');
+        setTimeout(function () {
+            $('#3-11').removeClass('blueButtonPlaying');
+        }, 1450);
     });
     $('#3-12').click(() => {
         fart12.currentTime = 0;
         fart12.play();
+        $('#3-12').addClass('purpleButtonPlaying');
+        setTimeout(function () {
+            $('#3-12').removeClass('purpleButtonPlaying');
+        }, 1050);
     });
     $('#3-13').click(() => {
         fart13.currentTime = 0;
         fart13.play();
+        $('#3-13').addClass('greenButtonPlaying');
+        setTimeout(function () {
+            $('#3-13').removeClass('greenButtonPlaying');
+        }, 920);
     });
     $('#3-14').click(() => {
         fart14.currentTime = 0;
         fart14.play();
+        $('#3-14').addClass('yellowButtonPlaying');
+        setTimeout(function () {
+            $('#3-14').removeClass('yellowButtonPlaying');
+        }, 1070);
     });
     $('#3-15').click(() => {
         fart15.currentTime = 0;
         fart15.play();
+        $('#3-15').addClass('redButtonPlaying');
+        setTimeout(function () {
+            $('#3-15').removeClass('redButtonPlaying');
+        }, 2450);
     });
 
 });
