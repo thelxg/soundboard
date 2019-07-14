@@ -37,9 +37,9 @@ $(document).ready(function () {
     const hg1 = new Audio('assets/audio/general/deedit.mp3');
     const hg2 = new Audio('assets/audio/general/clap.wav');
     const hg3 = new Audio('assets/audio/general/airhorn.mp3');
-    const necro1 = new Audio('assets/audio/general/deedit.mp3');
-    const necro2 = new Audio('assets/audio/general/clap.wav');
-    const necro3 = new Audio('assets/audio/general/airhorn.mp3');
+    const necro1 = new Audio('assets/audio/team/necro1.mp3');
+    const necro2 = new Audio('assets/audio/team/necro2.mp3');
+    const necro3 = new Audio('assets/audio/team/necro3.mp3');
     const jc1 = new Audio('assets/audio/general/deedit.mp3');
     const jc2 = new Audio('assets/audio/general/clap.wav');
     const jc3 = new Audio('assets/audio/general/airhorn.mp3');
@@ -74,7 +74,11 @@ $(document).ready(function () {
 
     randomSound = (arr) => {
         let randomIndex = Math.floor(Math.random() * 3);
-        arr[randomIndex].currentTime = 0;
+        arr.forEach(element => {
+            element.pause();
+            element.currentTime = 0;
+        });
+        // arr[randomIndex].currentTime = 0;
         arr[randomIndex].play();
     };
 
