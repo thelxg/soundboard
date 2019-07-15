@@ -181,10 +181,10 @@ $(document).ready(function () {
         gavel.currentTime = 0;
         gavel.play();
     });
-    $('#2-5').click(() => {
-        FILENAME.currentTime = 0;
-        FILENAME.play();
-    });
+    // $('#2-5').click(() => {
+    //     FILENAME.currentTime = 0;
+    //     FILENAME.play();
+    // });
     $('#2-6').click(() => {
         ifyb.currentTime = 0;
         ifyb.play();
