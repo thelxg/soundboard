@@ -63,7 +63,6 @@ body {
 }
 
 .innerbuttonimg {
-
     transform: translate(-4px, 0px);
     height: 48px;
     width: 48px;
@@ -270,8 +269,14 @@ button:active {
     }
     #bankButtons {
         height: 10%;
-        padding: 0 0 0 25px;
         justify-content: space-around;
+    }
+    .smallButton {
+        padding: 0;
+        margin-right: 0;
+    }
+    #bank1 .innerButton, #bank2 .innerButton, #bank3 .innerButton {
+        transform: translate(4px, 0px);
     }
     #teamsBoard {
         margin-top: 10px;
@@ -288,9 +293,6 @@ button:active {
         height: 100px;
         width: 100px;
         text-align: center;
-    }
-    #cdbutton {
-        transform: translateY(15px);
     }
     .tape {
         display: none;
