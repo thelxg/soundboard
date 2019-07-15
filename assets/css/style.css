@@ -44,6 +44,14 @@ body {
     background: #c8d6e8;
 }
 
+.stopButton {
+    margin-right: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #e04c4c;
+}
+
 .smallButtonActive {
     background: #fff;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
@@ -51,7 +59,7 @@ body {
 
 #stop:active {
     background: url("../images/redbuttonbg.jpg");
-    box-shadow: 0 0 35px rgba(240, 56, 54, 0.6);
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.7);
 }
 
 .innerbuttonimg {
