@@ -58,14 +58,15 @@ body {
 }
 
 #stop:active {
-    background: url("../images/redbuttonbg.jpg");
+    background: #ff0000;
     box-shadow: 0 0 35px rgba(255, 0, 0, 0.7);
 }
 
 .innerbuttonimg {
-    transform: translate(-7px, -2px);
-    height: 56px;
-    width: 55px;
+
+    transform: translate(-4px, 0px);
+    height: 48px;
+    width: 48px;
     opacity: 0.9;
 }
 
