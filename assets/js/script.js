@@ -72,14 +72,37 @@ $(document).ready(function () {
     const bjArr = [bj1, bj2, bj3];
     const cockenArr = [cocken1, cocken2, cocken3];
 
-    randomSound = (arr) => {
-        let randomIndex = Math.floor(Math.random() * 3);
-        arr.forEach(element => {
+    stopSound = (arr) => {
+        arr.forEach((element) => {
             element.pause();
             element.currentTime = 0;
         });
-        // arr[randomIndex].currentTime = 0;
-        arr[randomIndex].play();
+    };
+
+    $('#stop').click(function () {
+        const rbArr = [rb1, rb2, rb3];
+        stopSound(hgArr);
+        stopSound(necroArr);
+        stopSound(jcArr);
+        stopSound(cdArr);
+        stopSound(hpArr);
+        stopSound(bukkakeArr);
+        stopSound(dvArr);
+        stopSound(bjArr);
+        stopSound(cockenArr);
+    });
+
+    randomSound = (arr) => {
+        let randomIndex = Math.floor(Math.random() * 3);
+        arr.forEach(element => {
+            if (element.currentTime !== 0) {
+                element.pause();
+                element.currentTime = 0;
+            }
+            else {
+                arr[randomIndex].play();
+            };
+        });
     };
 
     $('#rapebabies').click(() => {
@@ -141,6 +164,10 @@ $(document).ready(function () {
     $('#2-2').click(() => {
         applause.currentTime = 0;
         applause.play();
+        $('#2-2').addClass('purpleButtonPlaying');
+        setTimeout(function () {
+            $('#2-2').removeClass('purpleButtonPlaying');
+        }, 4000);
     });
     $('#2-3').click(() => {
         braaam.currentTime = 0;
