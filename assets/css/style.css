@@ -1,6 +1,6 @@
 body {
     background: url("../images/bg.jpg") no-repeat;
-    background-size: cover;
+    background-size: 100%, 100%;
     color: #fff;
 }
 
@@ -138,7 +138,7 @@ button:focus {
 
 button h1, button h6 {
     color: #d3d8dc;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0,0.4);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .buttontext {
@@ -220,6 +220,54 @@ button:active {
     font-size: .9rem;
 }
 
+@-webkit-keyframes redPulse {
+    from {
+        background-color: #ff0000;
+        -webkit-box-shadow: 0 0 555px rgba(255, 0, 0, 1);
+    }
+    50% {
+        background-color: #880000;
+        -webkit-box-shadow: 0 0 5px rgba(240, 57, 54, 0);
+    }
+    to {
+        background-color: #ff0000;
+        -webkit-box-shadow: 0 0 555px rgba(255, 0, 0, 1);
+    }
+}
+
+@keyframes redPulse {
+    from {
+        background-color: #ff0000;
+        -webkit-box-shadow: 0 0 555px rgba(255, 0, 0, 1);
+    }
+    50% {
+        background-color: #880000;
+        -webkit-box-shadow: 0 0 5px rgba(240, 57, 54, 0);
+    }
+    to {
+        background-color: #ff0000;
+        -webkit-box-shadow: 0 0 555px rgba(255, 0, 0, 1);
+    }
+}
+
+#powerLED {
+    height: 15px;
+    width: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    border-top: 2px inset rgba(70, 69, 77, 0.9);
+    border-left: 2px inset rgba(70, 69, 77, 0.9);
+    border-right: 2px inset rgba(70, 69, 77, 0.9);
+    border-radius: 5px 5px 0 0;
+    -webkit-animation-name: redPulse;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: redPulse;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         padding: 40px 0 20px 0;
@@ -278,6 +326,9 @@ button:active {
     }
     #bank1 .innerButton, #bank2 .innerButton, #bank3 .innerButton {
         transform: translate(4px, 0px);
+    }
+    #stop .innerButton {
+        transform: translate(1px, 0px);
     }
     #teamsBoard {
         margin-top: 10px;
