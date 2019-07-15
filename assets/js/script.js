@@ -80,7 +80,7 @@ $(document).ready(function () {
     };
 
     $('#stop').click(function () {
-        const rbArr = [rb1, rb2, rb3];
+        stopSound(rbArr);
         stopSound(hgArr);
         stopSound(necroArr);
         stopSound(jcArr);
