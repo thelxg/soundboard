@@ -137,7 +137,8 @@ button:focus {
 }
 
 button h1, button h6 {
-    color: #c6c9Cd;
+    color: #d3d8dc;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0,0.4);
 }
 
 .buttontext {
@@ -302,7 +303,8 @@ button:active {
         position: relative;
     }
     .buttontext {
-        display: flex;
+        display: block;
+        text-align: center;
     }
     #generalBoard, #fartBoard {
         margin-top: 10px;
