@@ -253,7 +253,7 @@ button:active {
 #powerLED {
     height: 15px;
     width: 15px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 50%;
     border-top: 2px inset rgba(70, 69, 77, 0.9);

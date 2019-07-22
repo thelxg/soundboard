@@ -29,7 +29,7 @@ $(document).ready(function () {
         $('#bank1').removeClass('smallButtonActive');
     });
 
-    // team soundbank code
+    // Bank 1 code
 
     const rb1 = new Audio('assets/audio/team/rb1.mp3');
     const rb2 = new Audio();
@@ -136,7 +136,7 @@ $(document).ready(function () {
         randomSound(cockenArr)
     });
 
-    // general soundbank code
+    // Bank 2 code
     const airhorn = new Audio('assets/audio/general/airhorn.mp3');
     const applause = new Audio('assets/audio/general/applause.mp3');
     const kick = new Audio('assets/audio/general/kick.wav');
@@ -151,7 +151,33 @@ $(document).ready(function () {
     const beer = new Audio('assets/audio/general/getmebeer.mp3');
     const braaam = new Audio('assets/audio/general/braaam.mp3');
     const gavel = new Audio('assets/audio/general/gavel.mp3');
+    
+    let fartsIndex = 0;
+    const fart1 = new Audio('assets/audio/farts/fart1.wav');
+    const fart2 = new Audio('assets/audio/farts/fart2.wav');
+    const fart3 = new Audio('assets/audio/farts/fart3.wav');
+    const fart4 = new Audio('assets/audio/farts/fart4.wav');
+    const fart5 = new Audio('assets/audio/farts/fart5.wav');
+    const fart6 = new Audio('assets/audio/farts/fart6.wav');
+    const fart7 = new Audio('assets/audio/farts/fart7.wav');
+    const fart8 = new Audio('assets/audio/farts/fart8.wav');
+    const fart9 = new Audio('assets/audio/farts/fart9.wav');
+    const fart10 = new Audio('assets/audio/farts/fart10.wav');
+    const fart11 = new Audio('assets/audio/farts/fart11.wav');
+    const fart12 = new Audio('assets/audio/farts/fart12.wav');
+    const fart13 = new Audio('assets/audio/farts/fart13.wav');
+    const fart14 = new Audio('assets/audio/farts/fart14.wav');
+    const fart15 = new Audio('assets/audio/farts/fart15.wav');
+    const farts = [fart1, fart2, fart3, fart4, fart5, fart6, fart7, fart8, fart9, fart10, fart11, fart12, fart13, fart14, fart15];
 
+    playFarts = () => {
+        if (fartsIndex === farts.length) {
+            fartsIndex = 0;
+        }
+        farts[fartsIndex].currentTime = 0;
+        farts[fartsIndex].play();
+        fartsIndex++;
+    };
 
     $('#2-1').click(() => {
         airhorn.currentTime = 0;
@@ -181,10 +207,9 @@ $(document).ready(function () {
         gavel.currentTime = 0;
         gavel.play();
     });
-    // $('#2-5').click(() => {
-    //     FILENAME.currentTime = 0;
-    //     FILENAME.play();
-    // });
+    $('#2-5').click(() => {
+        playFarts();
+    });
     $('#2-6').click(() => {
         ifyb.currentTime = 0;
         ifyb.play();
@@ -247,23 +272,7 @@ $(document).ready(function () {
         hihat.play();
     });
 
-    // Fart soundbank code
-
-    const fart1 = new Audio('assets/audio/farts/fart1.wav');
-    const fart2 = new Audio('assets/audio/farts/fart2.wav');
-    const fart3 = new Audio('assets/audio/farts/fart3.wav');
-    const fart4 = new Audio('assets/audio/farts/fart4.wav');
-    const fart5 = new Audio('assets/audio/farts/fart5.wav');
-    const fart6 = new Audio('assets/audio/farts/fart6.wav');
-    const fart7 = new Audio('assets/audio/farts/fart7.wav');
-    const fart8 = new Audio('assets/audio/farts/fart8.wav');
-    const fart9 = new Audio('assets/audio/farts/fart9.wav');
-    const fart10 = new Audio('assets/audio/farts/fart10.wav');
-    const fart11 = new Audio('assets/audio/farts/fart11.wav');
-    const fart12 = new Audio('assets/audio/farts/fart12.wav');
-    const fart13 = new Audio('assets/audio/farts/fart13.wav');
-    const fart14 = new Audio('assets/audio/farts/fart14.wav');
-    const fart15 = new Audio('assets/audio/farts/fart15.wav');
+    // Bank 3 code
 
     $('#3-1').click(() => {
         fart1.currentTime = 0;
