@@ -32,7 +32,7 @@ $(document).ready(function () {
     // Bank 1 code
 
     const rb1 = new Audio('assets/audio/team/rb1.mp3');
-    const rb2 = new Audio();
+    const rb2 = new Audio('assets/audio/team/rb2.mp3');
     const rb3 = new Audio();
     const hg1 = new Audio();
     const hg2 = new Audio();
@@ -43,18 +43,18 @@ $(document).ready(function () {
     const jc1 = new Audio();
     const jc2 = new Audio();
     const jc3 = new Audio();
-    const cd1 = new Audio();
-    const cd2 = new Audio();
-    const cd3 = new Audio();
+    const cd1 = new Audio('assets/audio/team/cd1.mp3');
+    const cd2 = new Audio('assets/audio/team/cd2.mp3');
+    const cd3 = new Audio('assets/audio/team/cd3.mp3');
     const hp1 = new Audio();
     const hp2 = new Audio();
     const hp3 = new Audio();
     const bukkake1 = new Audio();
     const bukkake2 = new Audio();
     const bukkake3 = new Audio();
-    const dv1 = new Audio();
-    const dv2 = new Audio();
-    const dv3 = new Audio();
+    const dv1 = new Audio('assets/audio/team/dv1.mp3');
+    const dv2 = new Audio('assets/audio/team/dv2.mp3');
+    const dv3 = new Audio('assets/audio/team/dv3.mp3');
     const bj1 = new Audio();
     const bj2 = new Audio();
     const bj3 = new Audio();
@@ -71,6 +71,16 @@ $(document).ready(function () {
     const dvArr = [dv1, dv2, dv3];
     const bjArr = [bj1, bj2, bj3];
     const cockenArr = [cocken1, cocken2, cocken3];
+    let rbIndex = 0;
+    let hgIndex = 0;
+    let necroIndex = 0;
+    let jcIndex = 0;
+    let cdIndex = 0;
+    let hpIndex = 0;
+    let bukkakeIndex = 0;
+    let dvIndex = 0;
+    let bjIndex = 0;
+    let cockenIndex = 0;
 
     stopSound = (arr) => {
         arr.forEach((element) => {
@@ -92,48 +102,115 @@ $(document).ready(function () {
         stopSound(cockenArr);
     });
 
-    randomSound = (arr) => {
-        let randomIndex = Math.floor(Math.random() * 3);
-        arr.forEach(element => {
-            if (element.currentTime !== 0) {
-                element.pause();
-                element.currentTime = 0;
-            }
-            else {
-                arr[randomIndex].play();
-            };
-        });
-    };
-
     $('#rapebabies').click(() => {
-        randomSound(rbArr)
+        rbArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (rbIndex === rbArr.length) {
+            rbIndex = 0;
+        };
+        rbArr[rbIndex].play();
+        rbIndex++
     });
     $('#handGrenades').click(() => {
-        randomSound(hgArr)
+        hgArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (hgIndex === hgArr.length) {
+            hgIndex = 0;
+        };
+        hgArr[hgIndex].play();
+        hgIndex++
     });
     $('#necros').click(() => {
-        randomSound(necroArr)
+        necroArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (necroIndex === necroArr.length) {
+            necroIndex = 0;
+        };
+        necroArr[necroIndex].play();
+        necroIndex++
     });
     $('#jazzCabbage').click(() => {
-        randomSound(jcArr)
+        jcArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (jcIndex === jcArr.length) {
+            jcIndex = 0;
+        };
+        jcArr[jcIndex].play();
+        jcIndex++
     });
     $('#cumDumpsters').click(() => {
-        randomSound(cdArr)
+        cdArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (cdIndex === cdArr.length) {
+            cdIndex = 0;
+        };
+        cdArr[cdIndex].play();
+        cdIndex++
     });
     $('#hotPockets').click(() => {
-        randomSound(hpArr)
+        hpArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (hpIndex === hpArr.length) {
+            hpIndex = 0;
+        };
+        hpArr[hpIndex].play();
+        hpIndex++
     });
     $('#bukkake').click(() => {
-        randomSound(bukkakeArr)
+        bukkakeArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (bukkakeIndex === bukkakeArr.length) {
+            bukkakeIndex = 0;
+        };
+        bukkakeArr[bukkakeIndex].play();
+        bukkakeIndex++
     });
     $('#domesticViolence').click(() => {
-        randomSound(dvArr)
+        dvArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (dvIndex === dvArr.length) {
+            dvIndex = 0;
+        };
+        dvArr[dvIndex].play();
+        dvIndex++
     });
     $('#buffaloJockeys').click(() => {
-        randomSound(bjArr)
+        bjArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (bjIndex === bjArr.length) {
+            bjIndex = 0;
+        };
+        bjArr[bjIndex].play();
+        bjIndex++
     });
     $('#cockenblockers').click(() => {
-        randomSound(cockenArr)
+        cockenArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (cockenIndex === cockenArr.length) {
+            cockenIndex = 0;
+        };
+        cockenArr[cockenIndex].play();
+        cockenIndex++
     });
 
     // Bank 2 code
@@ -151,7 +228,7 @@ $(document).ready(function () {
     const beer = new Audio('assets/audio/general/getmebeer.mp3');
     const braaam = new Audio('assets/audio/general/braaam.mp3');
     const gavel = new Audio('assets/audio/general/gavel.mp3');
-    
+
     let fartsIndex = 0;
     const fart1 = new Audio('assets/audio/farts/fart1.wav');
     const fart2 = new Audio('assets/audio/farts/fart2.wav');
@@ -274,125 +351,141 @@ $(document).ready(function () {
 
     // Bank 3 code
 
+    const audio31 = new Audio();
+    const audio32 = new Audio();
+    const audio33 = new Audio();
+    const audio34 = new Audio();
+    const audio35 = new Audio();
+    const audio36 = new Audio();
+    const audio37 = new Audio();
+    const audio38 = new Audio();
+    const audio39 = new Audio();
+    const audio310 = new Audio();
+    const audio311 = new Audio();
+    const audio312 = new Audio();
+    const audio313 = new Audio();
+    const audio314 = new Audio();
+    const audio315 = new Audio();
+
     $('#3-1').click(() => {
-        fart1.currentTime = 0;
-        fart1.play();
+        audio31.currentTime = 0;
+        audio31.play();
         $('#3-1').addClass('blueButtonPlaying');
         setTimeout(function () {
             $('#3-1').removeClass('blueButtonPlaying');
-        }, 510);
+        }, 500);
     });
     $('#3-2').click(() => {
-        fart2.currentTime = 0;
-        fart2.play();
+        audio32.currentTime = 0;
+        audio32.play();
         $('#3-2').addClass('purpleButtonPlaying');
         setTimeout(function () {
             $('#3-2').removeClass('purpleButtonPlaying');
-        }, 3230);
+        }, 500);
     });
     $('#3-3').click(() => {
-        fart3.currentTime = 0;
-        fart3.play();
+        audio33.currentTime = 0;
+        audio33.play();
         $('#3-3').addClass('greenButtonPlaying');
         setTimeout(function () {
             $('#3-3').removeClass('greenButtonPlaying');
-        }, 900);
+        }, 500);
     });
     $('#3-4').click(() => {
-        fart4.currentTime = 0;
-        fart4.play();
+        audio34.currentTime = 0;
+        audio34.play();
         $('#3-4').addClass('yellowButtonPlaying');
         setTimeout(function () {
             $('#3-4').removeClass('yellowButtonPlaying');
-        }, 1550);
+        }, 500);
     });
     $('#3-5').click(() => {
-        fart5.currentTime = 0;
-        fart5.play();
+        audio35.currentTime = 0;
+        audio35.play();
         $('#3-5').addClass('redButtonPlaying');
         setTimeout(function () {
             $('#3-5').removeClass('redButtonPlaying');
-        }, 400);
+        }, 500);
     });
     $('#3-6').click(() => {
-        fart6.currentTime = 0;
-        fart6.play();
+        audio36.currentTime = 0;
+        audio36.play();
         $('#3-6').addClass('blueButtonPlaying');
         setTimeout(function () {
             $('#3-6').removeClass('blueButtonPlaying');
-        }, 1280);
+        }, 500);
     });
     $('#3-7').click(() => {
-        fart7.currentTime = 0;
-        fart7.play();
+        audio37.currentTime = 0;
+        audio37.play();
         $('#3-7').addClass('purpleButtonPlaying');
         setTimeout(function () {
             $('#3-7').removeClass('purpleButtonPlaying');
-        }, 1750);
+        }, 500);
     });
     $('#3-8').click(() => {
-        fart8.currentTime = 0;
-        fart8.play();
+        audio38.currentTime = 0;
+        audio38.play();
         $('#3-8').addClass('greenButtonPlaying');
         setTimeout(function () {
             $('#3-8').removeClass('greenButtonPlaying');
-        }, 1558);
+        }, 500);
     });
     $('#3-9').click(() => {
-        fart9.currentTime = 0;
-        fart9.play();
+        audio39.currentTime = 0;
+        audio39.play();
         $('#3-9').addClass('yellowButtonPlaying');
         setTimeout(function () {
             $('#3-9').removeClass('yellowButtonPlaying');
-        }, 1320);
+        }, 500);
     });
     $('#3-10').click(() => {
-        fart10.currentTime = 0;
-        fart10.play();
+        audio310.currentTime = 0;
+        audio310.play();
         $('#3-10').addClass('redButtonPlaying');
         setTimeout(function () {
             $('#3-10').removeClass('redButtonPlaying');
-        }, 400);
+        }, 500);
     });
     $('#3-11').click(() => {
-        fart11.currentTime = 0;
-        fart11.play();
+        audio311.currentTime = 0;
+        audio311.play();
         $('#3-11').addClass('blueButtonPlaying');
         setTimeout(function () {
             $('#3-11').removeClass('blueButtonPlaying');
-        }, 1450);
+        }, 500);
     });
     $('#3-12').click(() => {
-        fart12.currentTime = 0;
-        fart12.play();
+        audio312.currentTime = 0;
+        audio312.play();
         $('#3-12').addClass('purpleButtonPlaying');
         setTimeout(function () {
             $('#3-12').removeClass('purpleButtonPlaying');
-        }, 1050);
+        }, 500);
     });
     $('#3-13').click(() => {
-        fart13.currentTime = 0;
-        fart13.play();
+        audio313.currentTime = 0;
+        audio313.play();
         $('#3-13').addClass('greenButtonPlaying');
         setTimeout(function () {
             $('#3-13').removeClass('greenButtonPlaying');
-        }, 920);
+        }, 500);
     });
     $('#3-14').click(() => {
-        fart14.currentTime = 0;
-        fart14.play();
+        audio314.currentTime = 0;
+        audio314.play();
         $('#3-14').addClass('yellowButtonPlaying');
         setTimeout(function () {
             $('#3-14').removeClass('yellowButtonPlaying');
-        }, 1070);
+        }, 500);
     });
     $('#3-15').click(() => {
-        fart15.currentTime = 0;
-        fart15.play();
+        audio315.currentTime = 0;
+        audio315.play();
         $('#3-15').addClass('redButtonPlaying');
         setTimeout(function () {
             $('#3-15').removeClass('redButtonPlaying');
-        }, 2450);
+        }, 500);
     });
 
 });
