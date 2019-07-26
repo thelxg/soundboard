@@ -33,13 +33,25 @@ $(document).ready(function () {
 
     const rb1 = new Audio('assets/audio/team/rb1.mp3');
     const rb2 = new Audio('assets/audio/team/rb2.mp3');
-    const rb3 = new Audio();
+    const rb3 = new Audio('assets/audio/team/rb3.mp3');
     const hg1 = new Audio();
     const hg2 = new Audio();
     const hg3 = new Audio();
     const necro1 = new Audio('assets/audio/team/necro1.mp3');
     const necro2 = new Audio('assets/audio/team/necro2.mp3');
     const necro3 = new Audio('assets/audio/team/necro3.mp3');
+    const necro4 = new Audio();
+    const necro5 = new Audio();
+    const necro6 = new Audio();
+    const necro7 = new Audio();
+    const necro8 = new Audio();
+    const necro9 = new Audio();
+    const necro10 = new Audio();
+    const necro11 = new Audio();
+    const necro12 = new Audio();
+    const necro13 = new Audio();
+    const necro14 = new Audio();
+    const necro15 = new Audio();
     const jc1 = new Audio();
     const jc2 = new Audio();
     const jc3 = new Audio();
@@ -63,7 +75,7 @@ $(document).ready(function () {
     const cocken3 = new Audio();
     const rbArr = [rb1, rb2, rb3];
     const hgArr = [hg1, hg2, hg3];
-    const necroArr = [necro1, necro2, necro3];
+    const necroArr = [necro1, necro2, necro3, necro4, necro5, necro6, necro7, necro8, necro9, necro10, necro11, necro12, necro13, necro14, necro15];
     const jcArr = [jc1, jc2, jc3];
     const cdArr = [cd1, cd2, cd3];
     const hpArr = [hp1, hp2, hp3];
@@ -81,6 +93,126 @@ $(document).ready(function () {
     let dvIndex = 0;
     let bjIndex = 0;
     let cockenIndex = 0;
+
+    $('#rapebabies').click(() => {
+        rbArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (rbIndex === rbArr.length) {
+            rbIndex = 0;
+        };
+        rbArr[rbIndex].play();
+        rbIndex++
+    });
+
+    $('#handGrenades').click(() => {
+        hgArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (hgIndex === hgArr.length) {
+            hgIndex = 0;
+        };
+        hgArr[hgIndex].play();
+        hgIndex++
+    });
+
+    // $('#necros').click(() => {
+    //     necroArr.forEach((song) => {
+    //         song.pause();
+    //         song.currentTime = 0
+    //     });
+    //     if (necroIndex === necroArr.length) {
+    //         necroIndex = 0;
+    //     };
+    //     necroArr[necroIndex].play();
+    //     necroIndex++
+    // });
+
+    $('#jazzCabbage').click(() => {
+        jcArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (jcIndex === jcArr.length) {
+            jcIndex = 0;
+        };
+        jcArr[jcIndex].play();
+        jcIndex++
+    });
+
+    $('#cumDumpsters').click(() => {
+        cdArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (cdIndex === cdArr.length) {
+            cdIndex = 0;
+        };
+        cdArr[cdIndex].play();
+        cdIndex++
+    });
+
+    $('#hotPockets').click(() => {
+        hpArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (hpIndex === hpArr.length) {
+            hpIndex = 0;
+        };
+        hpArr[hpIndex].play();
+        hpIndex++
+    });
+
+    $('#bukkake').click(() => {
+        bukkakeArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (bukkakeIndex === bukkakeArr.length) {
+            bukkakeIndex = 0;
+        };
+        bukkakeArr[bukkakeIndex].play();
+        bukkakeIndex++
+    });
+
+    $('#domesticViolence').click(() => {
+        dvArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (dvIndex === dvArr.length) {
+            dvIndex = 0;
+        };
+        dvArr[dvIndex].play();
+        dvIndex++
+    });
+
+    $('#buffaloJockeys').click(() => {
+        bjArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (bjIndex === bjArr.length) {
+            bjIndex = 0;
+        };
+        bjArr[bjIndex].play();
+        bjIndex++
+    });
+
+    $('#cockenblockers').click(() => {
+        cockenArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (cockenIndex === cockenArr.length) {
+            cockenIndex = 0;
+        };
+        cockenArr[cockenIndex].play();
+        cockenIndex++
+    });
 
     stopSound = (arr) => {
         arr.forEach((element) => {
@@ -101,117 +233,6 @@ $(document).ready(function () {
         stopSound(bjArr);
         stopSound(cockenArr);
         stopSound(goatArr);
-    });
-
-    $('#rapebabies').click(() => {
-        rbArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (rbIndex === rbArr.length) {
-            rbIndex = 0;
-        };
-        rbArr[rbIndex].play();
-        rbIndex++
-    });
-    $('#handGrenades').click(() => {
-        hgArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (hgIndex === hgArr.length) {
-            hgIndex = 0;
-        };
-        hgArr[hgIndex].play();
-        hgIndex++
-    });
-    $('#necros').click(() => {
-        necroArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (necroIndex === necroArr.length) {
-            necroIndex = 0;
-        };
-        necroArr[necroIndex].play();
-        necroIndex++
-    });
-    $('#jazzCabbage').click(() => {
-        jcArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (jcIndex === jcArr.length) {
-            jcIndex = 0;
-        };
-        jcArr[jcIndex].play();
-        jcIndex++
-    });
-    $('#cumDumpsters').click(() => {
-        cdArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (cdIndex === cdArr.length) {
-            cdIndex = 0;
-        };
-        cdArr[cdIndex].play();
-        cdIndex++
-    });
-    $('#hotPockets').click(() => {
-        hpArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (hpIndex === hpArr.length) {
-            hpIndex = 0;
-        };
-        hpArr[hpIndex].play();
-        hpIndex++
-    });
-    $('#bukkake').click(() => {
-        bukkakeArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (bukkakeIndex === bukkakeArr.length) {
-            bukkakeIndex = 0;
-        };
-        bukkakeArr[bukkakeIndex].play();
-        bukkakeIndex++
-    });
-    $('#domesticViolence').click(() => {
-        dvArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (dvIndex === dvArr.length) {
-            dvIndex = 0;
-        };
-        dvArr[dvIndex].play();
-        dvIndex++
-    });
-    $('#buffaloJockeys').click(() => {
-        bjArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (bjIndex === bjArr.length) {
-            bjIndex = 0;
-        };
-        bjArr[bjIndex].play();
-        bjIndex++
-    });
-    $('#cockenblockers').click(() => {
-        cockenArr.forEach((song) => {
-            song.pause();
-            song.currentTime = 0
-        });
-        if (cockenIndex === cockenArr.length) {
-            cockenIndex = 0;
-        };
-        cockenArr[cockenIndex].play();
-        cockenIndex++
     });
 
     // Bank 2 code
@@ -265,6 +286,7 @@ $(document).ready(function () {
             $('#2-1').removeClass('blueButtonPlaying');
         }, 1600);
     });
+
     $('#2-2').click(() => {
         applause.currentTime = 0;
         applause.play();
@@ -273,6 +295,7 @@ $(document).ready(function () {
             $('#2-2').removeClass('purpleButtonPlaying');
         }, 4000);
     });
+
     $('#2-3').click(() => {
         braaam.currentTime = 0;
         braaam.play();
@@ -281,13 +304,16 @@ $(document).ready(function () {
             $('#2-3').removeClass('greenButtonPlaying');
         }, 2950);
     });
+
     $('#2-4').click(() => {
         gavel.currentTime = 0;
         gavel.play();
     });
+
     $('#2-5').click(() => {
         playFarts();
     });
+
     $('#2-6').click(() => {
         ifyb.currentTime = 0;
         ifyb.play();
@@ -295,8 +321,8 @@ $(document).ready(function () {
         setTimeout(function () {
             $('#2-6').removeClass('blueButtonPlaying');
         }, 3650);
-
     });
+
     $('#2-7').click(() => {
         hagay.currentTime = 0;
         hagay.play();
@@ -305,6 +331,7 @@ $(document).ready(function () {
             $('#2-7').removeClass('purpleButtonPlaying');
         }, 2600);
     });
+
     $('#2-8').click(() => {
         tmwn.currentTime = 0;
         tmwn.play();
@@ -313,6 +340,7 @@ $(document).ready(function () {
             $('#2-8').removeClass('greenButtonPlaying');
         }, 2800);
     });
+
     $('#2-9').click(() => {
         deedIt.currentTime = 0;
         deedIt.play();
@@ -321,6 +349,7 @@ $(document).ready(function () {
             $('#2-9').removeClass('yellowButtonPlaying');
         }, 1300);
     });
+
     $('#2-10').click(() => {
         beer.currentTime = 0;
         beer.play();
@@ -329,14 +358,17 @@ $(document).ready(function () {
             $('#2-10').removeClass('redButtonPlaying');
         }, 1600);
     });
+
     $('#2-11').click(() => {
         kick.currentTime = 0;
         kick.play();
     });
+
     $('#2-12').click(() => {
         snare1.currentTime = 0;
         snare1.play();
     });
+
     $('#2-13').click(() => {
         bell.currentTime = 0;
         bell.play();
@@ -345,6 +377,7 @@ $(document).ready(function () {
         clap.currentTime = 0;
         clap.play();
     });
+
     $('#2-15').click(() => {
         hihat.currentTime = 0;
         hihat.play();
@@ -355,19 +388,19 @@ $(document).ready(function () {
     const audio31 = new Audio('assets/audio/general/GOAT1.mp3');
     const audio32 = new Audio('assets/audio/general/GOAT2.mp3');
     const audio33 = new Audio('assets/audio/general/GOAT3.mp3');
-    const audio34 = new Audio('assets/audio/general/GOAT4.mp3');
-    const audio35 = new Audio('assets/audio/general/GOAT5.mp3');
-    const audio36 = new Audio();
-    const audio37 = new Audio();
+    const audio34 = new Audio('assets/audio/general/GOAT6.mp3');
+    const audio35 = new Audio('assets/audio/general/GOAT7.mp3');
+    const audio36 = new Audio('assets/audio/general/GOAT4.mp3');
+    const audio37 = new Audio('assets/audio/general/GOAT5.mp3');
     const audio38 = new Audio();
     const audio39 = new Audio();
     const audio310 = new Audio();
-    const audio311 = new Audio();
-    const audio312 = new Audio();
+    const audio311 = new Audio('assets/audio/general/imthatdude.mp3');
+    const audio312 = new Audio('assets/audio/general/hoe.mp3');
     const audio313 = new Audio();
     const audio314 = new Audio();
     const audio315 = new Audio();
-    const goatArr = [audio31, audio32, audio33, audio34, audio35];
+    const goatArr = [audio31, audio32, audio33, audio34, audio35, audio36, audio37, audio38, audio39, audio310, audio311, audio312, audio313, audio314, audio315];
 
     $('#3-1').click(() => {
         audio31.currentTime = 0;
@@ -377,6 +410,7 @@ $(document).ready(function () {
             $('#3-1').removeClass('blueButtonPlaying');
         }, 5900);
     });
+
     $('#3-2').click(() => {
         audio32.currentTime = 0;
         audio32.play();
@@ -385,6 +419,7 @@ $(document).ready(function () {
             $('#3-2').removeClass('purpleButtonPlaying');
         }, 1350);
     });
+
     $('#3-3').click(() => {
         audio33.currentTime = 0;
         audio33.play();
@@ -393,38 +428,43 @@ $(document).ready(function () {
             $('#3-3').removeClass('greenButtonPlaying');
         }, 1400);
     });
+
     $('#3-4').click(() => {
         audio34.currentTime = 0;
         audio34.play();
         $('#3-4').addClass('yellowButtonPlaying');
         setTimeout(function () {
             $('#3-4').removeClass('yellowButtonPlaying');
-        }, 2550);
+        }, 4850);
     });
+
     $('#3-5').click(() => {
         audio35.currentTime = 0;
         audio35.play();
         $('#3-5').addClass('redButtonPlaying');
         setTimeout(function () {
             $('#3-5').removeClass('redButtonPlaying');
-        }, 2500);
+        }, 5500);
     });
+
     $('#3-6').click(() => {
         audio36.currentTime = 0;
         audio36.play();
         $('#3-6').addClass('blueButtonPlaying');
         setTimeout(function () {
             $('#3-6').removeClass('blueButtonPlaying');
-        }, 500);
+        }, 2550);
     });
+
     $('#3-7').click(() => {
         audio37.currentTime = 0;
         audio37.play();
         $('#3-7').addClass('purpleButtonPlaying');
         setTimeout(function () {
             $('#3-7').removeClass('purpleButtonPlaying');
-        }, 500);
+        }, 4500);
     });
+
     $('#3-8').click(() => {
         audio38.currentTime = 0;
         audio38.play();
@@ -433,6 +473,7 @@ $(document).ready(function () {
             $('#3-8').removeClass('greenButtonPlaying');
         }, 500);
     });
+
     $('#3-9').click(() => {
         audio39.currentTime = 0;
         audio39.play();
@@ -441,6 +482,7 @@ $(document).ready(function () {
             $('#3-9').removeClass('yellowButtonPlaying');
         }, 500);
     });
+
     $('#3-10').click(() => {
         audio310.currentTime = 0;
         audio310.play();
@@ -449,22 +491,25 @@ $(document).ready(function () {
             $('#3-10').removeClass('redButtonPlaying');
         }, 500);
     });
+
     $('#3-11').click(() => {
         audio311.currentTime = 0;
         audio311.play();
         $('#3-11').addClass('blueButtonPlaying');
         setTimeout(function () {
             $('#3-11').removeClass('blueButtonPlaying');
-        }, 500);
+        }, 4850);
     });
+
     $('#3-12').click(() => {
         audio312.currentTime = 0;
         audio312.play();
         $('#3-12').addClass('purpleButtonPlaying');
         setTimeout(function () {
             $('#3-12').removeClass('purpleButtonPlaying');
-        }, 500);
+        }, 9650);
     });
+
     $('#3-13').click(() => {
         audio313.currentTime = 0;
         audio313.play();
@@ -473,6 +518,7 @@ $(document).ready(function () {
             $('#3-13').removeClass('greenButtonPlaying');
         }, 500);
     });
+
     $('#3-14').click(() => {
         audio314.currentTime = 0;
         audio314.play();
@@ -481,6 +527,7 @@ $(document).ready(function () {
             $('#3-14').removeClass('yellowButtonPlaying');
         }, 500);
     });
+
     $('#3-15').click(() => {
         audio315.currentTime = 0;
         audio315.play();
@@ -489,4 +536,5 @@ $(document).ready(function () {
             $('#3-15').removeClass('redButtonPlaying');
         }, 500);
     });
+
 });
