@@ -220,6 +220,11 @@ button:active {
     font-size: .9rem;
 }
 
+.goat {
+    height: 65px;
+    width: 65px;
+}
+
 @-webkit-keyframes redPulse {
     from {
         background-color: #191919;

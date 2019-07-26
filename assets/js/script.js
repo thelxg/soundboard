@@ -100,6 +100,7 @@ $(document).ready(function () {
         stopSound(dvArr);
         stopSound(bjArr);
         stopSound(cockenArr);
+        stopSound(goatArr);
     });
 
     $('#rapebabies').click(() => {
@@ -351,11 +352,11 @@ $(document).ready(function () {
 
     // Bank 3 code
 
-    const audio31 = new Audio();
-    const audio32 = new Audio();
-    const audio33 = new Audio();
-    const audio34 = new Audio();
-    const audio35 = new Audio();
+    const audio31 = new Audio('assets/audio/general/GOAT1.mp3');
+    const audio32 = new Audio('assets/audio/general/GOAT2.mp3');
+    const audio33 = new Audio('assets/audio/general/GOAT3.mp3');
+    const audio34 = new Audio('assets/audio/general/GOAT4.mp3');
+    const audio35 = new Audio('assets/audio/general/GOAT5.mp3');
     const audio36 = new Audio();
     const audio37 = new Audio();
     const audio38 = new Audio();
@@ -366,6 +367,7 @@ $(document).ready(function () {
     const audio313 = new Audio();
     const audio314 = new Audio();
     const audio315 = new Audio();
+    const goatArr = [audio31, audio32, audio33, audio34, audio35];
 
     $('#3-1').click(() => {
         audio31.currentTime = 0;
@@ -373,7 +375,7 @@ $(document).ready(function () {
         $('#3-1').addClass('blueButtonPlaying');
         setTimeout(function () {
             $('#3-1').removeClass('blueButtonPlaying');
-        }, 500);
+        }, 5900);
     });
     $('#3-2').click(() => {
         audio32.currentTime = 0;
@@ -381,7 +383,7 @@ $(document).ready(function () {
         $('#3-2').addClass('purpleButtonPlaying');
         setTimeout(function () {
             $('#3-2').removeClass('purpleButtonPlaying');
-        }, 500);
+        }, 1350);
     });
     $('#3-3').click(() => {
         audio33.currentTime = 0;
@@ -389,7 +391,7 @@ $(document).ready(function () {
         $('#3-3').addClass('greenButtonPlaying');
         setTimeout(function () {
             $('#3-3').removeClass('greenButtonPlaying');
-        }, 500);
+        }, 1400);
     });
     $('#3-4').click(() => {
         audio34.currentTime = 0;
@@ -397,7 +399,7 @@ $(document).ready(function () {
         $('#3-4').addClass('yellowButtonPlaying');
         setTimeout(function () {
             $('#3-4').removeClass('yellowButtonPlaying');
-        }, 500);
+        }, 2550);
     });
     $('#3-5').click(() => {
         audio35.currentTime = 0;
@@ -405,7 +407,7 @@ $(document).ready(function () {
         $('#3-5').addClass('redButtonPlaying');
         setTimeout(function () {
             $('#3-5').removeClass('redButtonPlaying');
-        }, 500);
+        }, 2500);
     });
     $('#3-6').click(() => {
         audio36.currentTime = 0;
@@ -487,5 +489,4 @@ $(document).ready(function () {
             $('#3-15').removeClass('redButtonPlaying');
         }, 500);
     });
-
 });
