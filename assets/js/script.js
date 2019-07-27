@@ -30,19 +30,19 @@ $(document).ready(function () {
     });
 
     // Bank 1 code
-    // Drew, Andrew, Moise, Mike, Kyle
+    // Drew, Andrew, Moise, Mike
 
     const rb1 = new Audio('assets/audio/team/rb1.mp3');
     const rb2 = new Audio('assets/audio/team/rb2.mp3');
     const rb3 = new Audio('assets/audio/team/rb3.mp3');
-    const hg1 = new Audio();
-    const hg2 = new Audio();
-    const hg3 = new Audio();
+    const hg1 = new Audio('assets/audio/team/hg1.mp3');
+    const hg2 = new Audio('assets/audio/team/hg2.mp3');
+    const hg3 = new Audio('assets/audio/team/hg3.mp3');
     const hg4 = new Audio('assets/audio/team/hg4.mp3');
-    const necro1 = new Audio('assets/audio/team/necro1.mp3');
+    const necro1 = new Audio('assets/audio/team/necro4.mp3');
     const necro2 = new Audio('assets/audio/team/necro2.mp3');
     const necro3 = new Audio('assets/audio/team/necro3.mp3');
-    const necro4 = new Audio();
+    const necro4 = new Audio('assets/audio/team/necro1.mp3');
     const necro5 = new Audio();
     const necro6 = new Audio();
     const necro7 = new Audio();
@@ -238,6 +238,7 @@ $(document).ready(function () {
         stopSound(bjArr);
         stopSound(cockenArr);
         stopSound(goatArr);
+        stopSound(nitbArr);
     });
 
     // Bank 2 code
@@ -402,10 +403,36 @@ $(document).ready(function () {
     const audio310 = new Audio();
     const audio311 = new Audio('assets/audio/general/imthatdude.mp3');
     const audio312 = new Audio('assets/audio/general/hoe.mp3');
-    const audio313 = new Audio();
+    const audio313 = new Audio('assets/audio/general/dinthap.mp3');
     const audio314 = new Audio();
     const audio315 = new Audio();
+    const nitb1 = new Audio('assets/audio/general/nitb1.mp3');
+    const nitb2 = new Audio('assets/audio/general/nitb2.mp3');
+    const nitb3 = new Audio('assets/audio/general/nitb3.mp3');
+    const nitb4 = new Audio('assets/audio/general/nitb4.mp3');
+    const nitb5 = new Audio('assets/audio/general/nitb5.mp3');
+    const nitb6 = new Audio('assets/audio/general/nitb6.mp3');
+    const nitb7 = new Audio('assets/audio/general/nitb7.mp3');
+    const nitb8 = new Audio('assets/audio/general/nitb8.mp3');
+    const nitb9 = new Audio('assets/audio/general/nitb9.mp3');
+    const nitb10 = new Audio('assets/audio/general/nitb10.mp3');
+    const nitb11 = new Audio('assets/audio/general/nitb11.mp3');
+    const nitb12 = new Audio('assets/audio/general/nitb12.mp3');
+    const nitb13 = new Audio('assets/audio/general/nitb13.mp3');
+    const nitb14 = new Audio('assets/audio/general/nitb14.mp3');
+
     const goatArr = [audio31, audio32, audio33, audio34, audio35, audio36, audio37, audio38, audio39, audio310, audio311, audio312, audio313, audio314, audio315];
+    let nitbIndex = 0;
+    const nitbArr = [nitb1, nitb2, nitb3, nitb4, nitb5, nitb6, nitb7, nitb8, nitb9, nitb10, nitb11, nitb12, nitb13, nitb14];
+
+    playNitb = () => {
+        if (nitbIndex === nitbArr.length) {
+            nitbIndex = 0;
+        }
+        nitbArr[nitbIndex].currentTime = 0;
+        nitbArr[nitbIndex].play();
+        nitbIndex++;
+    };
 
     $('#3-1').click(() => {
         audio31.currentTime = 0;
@@ -521,16 +548,11 @@ $(document).ready(function () {
         $('#3-13').addClass('greenButtonPlaying');
         setTimeout(function () {
             $('#3-13').removeClass('greenButtonPlaying');
-        }, 500);
+        }, 1850);
     });
 
     $('#3-14').click(() => {
-        audio314.currentTime = 0;
-        audio314.play();
-        $('#3-14').addClass('yellowButtonPlaying');
-        setTimeout(function () {
-            $('#3-14').removeClass('yellowButtonPlaying');
-        }, 500);
+        playNitb();
     });
 
     $('#3-15').click(() => {
