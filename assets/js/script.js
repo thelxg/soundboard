@@ -30,7 +30,7 @@ $(document).ready(function () {
     });
 
     // Bank 1 code
-    // Drew, Andrew, Moise, Mike
+    // Drew, Moise, Mike
 
     const rb1 = new Audio('assets/audio/team/rb1.mp3');
     const rb2 = new Audio('assets/audio/team/rb2.mp3');
@@ -60,6 +60,7 @@ $(document).ready(function () {
     const cd1 = new Audio('assets/audio/team/cd1.mp3');
     const cd2 = new Audio('assets/audio/team/cd2.mp3');
     const cd3 = new Audio('assets/audio/team/cd3.mp3');
+    const cd4 = new Audio('assets/audio/team/cd4.mp3');
     const hp1 = new Audio();
     const hp2 = new Audio();
     const hp3 = new Audio();
@@ -80,9 +81,9 @@ $(document).ready(function () {
     const cocken4 = new Audio('assets/audio/team/cocken4.mp3');
     const rbArr = [rb1, rb2, rb3];
     const hgArr = [hg1, hg2, hg3, hg4];
-    const necroArr = [necro1, necro2, necro3, necro4, necro5, necro6, necro7, necro8, necro9, necro10, necro11, necro12, necro13, necro14, necro15];
+    const necroArr = [necro1, necro2, necro3, necro4];
     const jcArr = [jc1, jc2, jc3];
-    const cdArr = [cd1, cd2, cd3];
+    const cdArr = [cd1, cd2, cd3, cd4];
     const hpArr = [hp1, hp2, hp3];
     const bukkakeArr = [bukkake1, bukkake2, bukkake3];
     const dvArr = [dv1, dv2, dv3, dv4];
@@ -553,6 +554,10 @@ $(document).ready(function () {
 
     $('#3-14').click(() => {
         playNitb();
+        $('#3-14').addClass('yellowButtonPlaying');
+        setTimeout(function () {
+            $('#3-14').removeClass('yellowButtonPlaying');
+        }, 1800);
     });
 
     $('#3-15').click(() => {
