@@ -399,14 +399,13 @@ $(document).ready(function () {
     const audio35 = new Audio('assets/audio/general/GOAT7.mp3');
     const audio36 = new Audio('assets/audio/general/GOAT4.mp3');
     const audio37 = new Audio('assets/audio/general/GOAT5.mp3');
-    const audio38 = new Audio();
-    const audio39 = new Audio();
-    const audio310 = new Audio();
+    const audio38 = new Audio('assets/audio/general/GOAT8.mp3');
+    const audio39 = new Audio('assets/audio/general/GOAT9.mp3');
+    const audio310 = new Audio('assets/audio/general/GOAT10.mp3');
     const audio311 = new Audio('assets/audio/general/imthatdude.mp3');
     const audio312 = new Audio('assets/audio/general/hoe.mp3');
     const audio313 = new Audio('assets/audio/general/dinthap.mp3');
-    const audio314 = new Audio();
-    const audio315 = new Audio();
+    const audio315 = new Audio('assets/audio/general/buysomestuff.mp3');
     const nitb1 = new Audio('assets/audio/general/nitb1.mp3');
     const nitb2 = new Audio('assets/audio/general/nitb2.mp3');
     const nitb3 = new Audio('assets/audio/general/nitb3.mp3');
@@ -422,7 +421,7 @@ $(document).ready(function () {
     const nitb13 = new Audio('assets/audio/general/nitb13.mp3');
     const nitb14 = new Audio('assets/audio/general/nitb14.mp3');
 
-    const goatArr = [audio31, audio32, audio33, audio34, audio35, audio36, audio37, audio38, audio39, audio310, audio311, audio312, audio313, audio314, audio315];
+    const goatArr = [audio31, audio32, audio33, audio34, audio35, audio36, audio37, audio38, audio39, audio310, audio311, audio312, audio313, audio315];
     let nitbIndex = 0;
     const nitbArr = [nitb1, nitb2, nitb3, nitb4, nitb5, nitb6, nitb7, nitb8, nitb9, nitb10, nitb11, nitb12, nitb13, nitb14];
 
@@ -504,7 +503,7 @@ $(document).ready(function () {
         $('#3-8').addClass('greenButtonPlaying');
         setTimeout(function () {
             $('#3-8').removeClass('greenButtonPlaying');
-        }, 500);
+        }, 6400);
     });
 
     $('#3-9').click(() => {
@@ -513,7 +512,7 @@ $(document).ready(function () {
         $('#3-9').addClass('yellowButtonPlaying');
         setTimeout(function () {
             $('#3-9').removeClass('yellowButtonPlaying');
-        }, 500);
+        }, 2550);
     });
 
     $('#3-10').click(() => {
@@ -522,7 +521,7 @@ $(document).ready(function () {
         $('#3-10').addClass('redButtonPlaying');
         setTimeout(function () {
             $('#3-10').removeClass('redButtonPlaying');
-        }, 500);
+        }, 2650);
     });
 
     $('#3-11').click(() => {
@@ -566,7 +565,7 @@ $(document).ready(function () {
         $('#3-15').addClass('redButtonPlaying');
         setTimeout(function () {
             $('#3-15').removeClass('redButtonPlaying');
-        }, 500);
+        }, 1800);
     });
 
 });
