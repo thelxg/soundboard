@@ -30,6 +30,7 @@ $(document).ready(function () {
     });
 
     // Bank 1 code
+    // Drew, Andrew, Moise, Mike, Kyle
 
     const rb1 = new Audio('assets/audio/team/rb1.mp3');
     const rb2 = new Audio('assets/audio/team/rb2.mp3');
@@ -37,6 +38,7 @@ $(document).ready(function () {
     const hg1 = new Audio();
     const hg2 = new Audio();
     const hg3 = new Audio();
+    const hg4 = new Audio('assets/audio/team/hg4.mp3');
     const necro1 = new Audio('assets/audio/team/necro1.mp3');
     const necro2 = new Audio('assets/audio/team/necro2.mp3');
     const necro3 = new Audio('assets/audio/team/necro3.mp3');
@@ -67,22 +69,25 @@ $(document).ready(function () {
     const dv1 = new Audio('assets/audio/team/dv1.mp3');
     const dv2 = new Audio('assets/audio/team/dv2.mp3');
     const dv3 = new Audio('assets/audio/team/dv3.mp3');
+    const dv4 = new Audio('assets/audio/team/dv4.mp3');
     const bj1 = new Audio();
     const bj2 = new Audio();
     const bj3 = new Audio();
-    const cocken1 = new Audio();
-    const cocken2 = new Audio();
-    const cocken3 = new Audio();
+    const bj4 = new Audio('assets/audio/team/bj4.mp3');
+    const cocken1 = new Audio('assets/audio/team/cocken1.mp3');
+    const cocken2 = new Audio('assets/audio/team/cocken2.mp3');
+    const cocken3 = new Audio('assets/audio/team/cocken3.mp3');
+    const cocken4 = new Audio('assets/audio/team/cocken4.mp3');
     const rbArr = [rb1, rb2, rb3];
-    const hgArr = [hg1, hg2, hg3];
+    const hgArr = [hg1, hg2, hg3, hg4];
     const necroArr = [necro1, necro2, necro3, necro4, necro5, necro6, necro7, necro8, necro9, necro10, necro11, necro12, necro13, necro14, necro15];
     const jcArr = [jc1, jc2, jc3];
     const cdArr = [cd1, cd2, cd3];
     const hpArr = [hp1, hp2, hp3];
     const bukkakeArr = [bukkake1, bukkake2, bukkake3];
-    const dvArr = [dv1, dv2, dv3];
-    const bjArr = [bj1, bj2, bj3];
-    const cockenArr = [cocken1, cocken2, cocken3];
+    const dvArr = [dv1, dv2, dv3, dv4];
+    const bjArr = [bj1, bj2, bj3, bj4];
+    const cockenArr = [cocken1, cocken2, cocken3, cocken4];
     let rbIndex = 0;
     let hgIndex = 0;
     let necroIndex = 0;
@@ -118,17 +123,17 @@ $(document).ready(function () {
         hgIndex++
     });
 
-    // $('#necros').click(() => {
-    //     necroArr.forEach((song) => {
-    //         song.pause();
-    //         song.currentTime = 0
-    //     });
-    //     if (necroIndex === necroArr.length) {
-    //         necroIndex = 0;
-    //     };
-    //     necroArr[necroIndex].play();
-    //     necroIndex++
-    // });
+    $('#necros').click(() => {
+        necroArr.forEach((song) => {
+            song.pause();
+            song.currentTime = 0
+        });
+        if (necroIndex === necroArr.length) {
+            necroIndex = 0;
+        };
+        necroArr[necroIndex].play();
+        necroIndex++
+    });
 
     $('#jazzCabbage').click(() => {
         jcArr.forEach((song) => {
