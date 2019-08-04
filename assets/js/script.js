@@ -30,7 +30,7 @@ $(document).ready(function () {
     });
 
     // Bank 1 code
-    // Drew, Moise, Mike
+    // Drew, Mike
 
     const rb1 = new Audio('assets/audio/team/rb1.mp3');
     const rb2 = new Audio('assets/audio/team/rb2.mp3');
@@ -43,20 +43,21 @@ $(document).ready(function () {
     const necro2 = new Audio('assets/audio/team/necro2.mp3');
     const necro3 = new Audio('assets/audio/team/necro3.mp3');
     const necro4 = new Audio('assets/audio/team/necro1.mp3');
-    const necro5 = new Audio();
-    const necro6 = new Audio();
-    const necro7 = new Audio();
-    const necro8 = new Audio();
-    const necro9 = new Audio();
-    const necro10 = new Audio();
-    const necro11 = new Audio();
-    const necro12 = new Audio();
-    const necro13 = new Audio();
-    const necro14 = new Audio();
-    const necro15 = new Audio();
+    // const necro5 = new Audio();
+    // const necro6 = new Audio();
+    // const necro7 = new Audio();
+    // const necro8 = new Audio();
+    // const necro9 = new Audio();
+    // const necro10 = new Audio();
+    // const necro11 = new Audio();
+    // const necro12 = new Audio();
+    // const necro13 = new Audio();
+    // const necro14 = new Audio();
+    // const necro15 = new Audio();
     const jc1 = new Audio();
     const jc2 = new Audio();
     const jc3 = new Audio();
+    const jc4 = new Audio();
     const cd1 = new Audio('assets/audio/team/cd1.mp3');
     const cd2 = new Audio('assets/audio/team/cd2.mp3');
     const cd3 = new Audio('assets/audio/team/cd3.mp3');
@@ -64,16 +65,18 @@ $(document).ready(function () {
     const hp1 = new Audio();
     const hp2 = new Audio();
     const hp3 = new Audio();
+    const hp4 = new Audio('assets/audio/team/hp4.mp3');
     const bukkake1 = new Audio();
     const bukkake2 = new Audio();
     const bukkake3 = new Audio();
+    const bukkake4 = new Audio();
     const dv1 = new Audio('assets/audio/team/dv1.mp3');
     const dv2 = new Audio('assets/audio/team/dv2.mp3');
     const dv3 = new Audio('assets/audio/team/dv3.mp3');
     const dv4 = new Audio('assets/audio/team/dv4.mp3');
-    const bj1 = new Audio();
-    const bj2 = new Audio();
-    const bj3 = new Audio();
+    const bj1 = new Audio('assets/audio/team/bj1.mp3');
+    const bj2 = new Audio('assets/audio/team/bj2.mp3');
+    const bj3 = new Audio('assets/audio/team/bj3.mp3');
     const bj4 = new Audio('assets/audio/team/bj4.mp3');
     const cocken1 = new Audio('assets/audio/team/cocken1.mp3');
     const cocken2 = new Audio('assets/audio/team/cocken2.mp3');
@@ -82,10 +85,10 @@ $(document).ready(function () {
     const rbArr = [rb1, rb2, rb3];
     const hgArr = [hg1, hg2, hg3, hg4];
     const necroArr = [necro1, necro2, necro3, necro4];
-    const jcArr = [jc1, jc2, jc3];
+    const jcArr = [jc1, jc2, jc3, jc4];
     const cdArr = [cd1, cd2, cd3, cd4];
-    const hpArr = [hp1, hp2, hp3];
-    const bukkakeArr = [bukkake1, bukkake2, bukkake3];
+    const hpArr = [hp1, hp2, hp3, hp4];
+    const bukkakeArr = [bukkake1, bukkake2, bukkake3, bukkake4];
     const dvArr = [dv1, dv2, dv3, dv4];
     const bjArr = [bj1, bj2, bj3, bj4];
     const cockenArr = [cocken1, cocken2, cocken3, cocken4];
@@ -243,6 +246,7 @@ $(document).ready(function () {
     });
 
     // Bank 2 code
+
     const airhorn = new Audio('assets/audio/general/airhorn.mp3');
     const applause = new Audio('assets/audio/general/applause.mp3');
     const kick = new Audio('assets/audio/general/kick.wav');
