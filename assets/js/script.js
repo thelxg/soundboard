@@ -55,10 +55,11 @@ $(document).ready(function () {
     const necro14 = new Audio('assets/audio/team/necro14.mp3');
     // const necro15 = new Audio('assets/audio/team/necro15.mp3');
     // const necro16 = new Audio('assets/audio/team/necro16.mp3');
-    const jc1 = new Audio();
-    const jc2 = new Audio();
-    const jc3 = new Audio();
-    const jc4 = new Audio();
+    const jc1 = new Audio('assets/audio/team/jc1.mp3');
+    const jc2 = new Audio('assets/audio/team/jc2.mp3');
+    const jc3 = new Audio('assets/audio/team/jc3.mp3');
+    const jc4 = new Audio('assets/audio/team/jc4.mp3');
+    const jc5 = new Audio('assets/audio/team/jc5.mp3');
     const cd1 = new Audio('assets/audio/team/cd1.mp3');
     const cd2 = new Audio('assets/audio/team/cd2.mp3');
     const cd3 = new Audio('assets/audio/team/cd3.mp3');
@@ -86,7 +87,7 @@ $(document).ready(function () {
     const rbArr = [rb1, rb2, rb3];
     const hgArr = [hg1, hg2, hg3, hg4];
     const necroArr = [necro6, necro4, necro3, necro8, necro14, necro1, necro10, necro5, necro9, necro13, necro12, necro11];
-    const jcArr = [jc1, jc2, jc3, jc4];
+    const jcArr = [jc1, jc2, jc3, jc4, jc5];
     const cdArr = [cd1, cd2, cd3, cd4];
     const hpArr = [hp1, hp2, hp3, hp4];
     const bukkakeArr = [bukkake1, bukkake2, bukkake3, bukkake4];
@@ -261,7 +262,7 @@ $(document).ready(function () {
     const deedIt = new Audio('assets/audio/general/deedit.mp3');
     const beer = new Audio('assets/audio/general/getmebeer.mp3');
     const braaam = new Audio('assets/audio/general/braaam.mp3');
-    const gavel = new Audio('assets/audio/general/gavel.mp3');
+    const oohwee = new Audio('assets/audio/general/oohwee.mp3');
 
     let fartsIndex = 0;
     const fart1 = new Audio('assets/audio/farts/fart1.wav');
@@ -318,8 +319,8 @@ $(document).ready(function () {
     });
 
     $('#2-4').click(() => {
-        gavel.currentTime = 0;
-        gavel.play();
+        oohwee.currentTime = 0;
+        oohwee.play();
     });
 
     $('#2-5').click(() => {
@@ -407,8 +408,8 @@ $(document).ready(function () {
     const audio38 = new Audio('assets/audio/general/GOAT8.mp3');
     const audio39 = new Audio('assets/audio/general/GOAT9.mp3');
     const audio310 = new Audio('assets/audio/general/GOAT10.mp3');
-    const audio311 = new Audio('assets/audio/general/imthatdude.mp3');
-    const audio312 = new Audio('assets/audio/general/hoe.mp3');
+    const audio311 = new Audio('assets/audio/general/church.mp3');
+    const audio312 = new Audio('assets/audio/general/youscared.mp3');
     const audio313 = new Audio('assets/audio/general/dinthap.mp3');
     const audio315 = new Audio('assets/audio/general/buysomestuff.mp3');
     const nitb1 = new Audio('assets/audio/general/nitb1.mp3');
