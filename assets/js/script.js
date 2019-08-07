@@ -236,6 +236,7 @@ $(document).ready(function () {
         stopSound(cockenArr);
         stopSound(goatArr);
         stopSound(nitbArr);
+        $('.butbut').removeClass('greenButtonPlaying blueButtonPlaying redButtonPlaying purpleButtonPlaying yellowButtonPlaying');
     });
 
     // Bank 2 code
