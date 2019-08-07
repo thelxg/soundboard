@@ -527,7 +527,7 @@ $(document).ready(function () {
         $('#3-11').addClass('blueButtonPlaying');
         setTimeout(function () {
             $('#3-11').removeClass('blueButtonPlaying');
-        }, 4850);
+        }, 3500);
     });
 
     $('#3-12').click(() => {
@@ -536,7 +536,7 @@ $(document).ready(function () {
         $('#3-12').addClass('purpleButtonPlaying');
         setTimeout(function () {
             $('#3-12').removeClass('purpleButtonPlaying');
-        }, 9650);
+        }, 5400);
     });
 
     $('#3-13').click(() => {
