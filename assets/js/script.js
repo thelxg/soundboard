@@ -1,3 +1,7 @@
+function btnChrome_onclick() {
+    document.documentElement.webkitRequestFullScreen();
+  };
+
 $(document).ready(function () {
 
     // display toggle for different banks
